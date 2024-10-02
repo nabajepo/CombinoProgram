@@ -1,5 +1,6 @@
 %This program make combinaison and stock them in a txt file
 %Here we start combino
+%here we make combinaison
 %Here we make full combinaison
 combinoComplet([Tail|Queue],LoLs,SListEn,Result):-Queue\=[]->combino(LoLs,Tail,SListEn,TRN)
                                                            ,combinoComplet(Queue,LoLs,TRN,Result);
