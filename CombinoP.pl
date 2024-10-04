@@ -7,15 +7,22 @@ startCombinoP:-writeln("Hey this program combine numbers for n elements selected
                read(N),
                write("For "),
                write(N),
-               writeln("elements we got : "),
+               writeln(" elements we got : "),
+               writeln("#####################################--RESULTS--#################################"),
                combinoP(N,ResL),
-               display(ResL).
+               display(ResL),
+               writeln(""),
+               writeln("#########################################--END--#################################"),
+               length(ResL,Length),
+               write("We got "),
+               write(Length),
+               writeln(" results ").
 %%%%%%%%%%%%%%%%%%%%% This are all numbers we have to%%%%%%%%%%%%%%%%%
 numbers([0,1,2,3,4,5,6,7,8,9]).
 %Here where we do combinaison
 combinoP(Size,ResL):-numbers(N),Size\=1->combinoManage(N,N,Size,2,ResL),!;numbers(ResL),!.
 %Here we display result
-display(R):-maplist(writeln,R).
+display(R):-maplist(write,R).
 %Here we make combinaison for N pin(Tour)
 combinoManage(Data,Number,Tour,Loc,Res):-Loc\=Tour->NewLoc is Loc+1
                                         ,combinoComplet(Number,Data,[],ResT)
