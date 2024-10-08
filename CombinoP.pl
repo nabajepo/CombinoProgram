@@ -47,6 +47,6 @@ pushBack(Element,[Tail|Queue],[Tail|NewList]):-pushBack(Element,Queue,NewList).
 %Here we add in-front
 pushFront(Element,List,[Element|List]).
 %here we look for specific pin
-getSpesificPin(List,Pin,Res):-Res.
+getSpecificPin(List,Pin,Res):-writeln("Here we show element on specific address"),Res.
 
 
