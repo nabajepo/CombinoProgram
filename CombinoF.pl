@@ -7,7 +7,7 @@ startCombinoF:-writeln("Hey this program combine numbers for n elements selecte 
                write("For "),
                write(N),
                writeln(" elements we got : "),
-               writeln("#####################################--RESULTS--#################################").
+               writeln("####################################--RESULTS--#################################").
 combinoComplet([Tail|Queue],LoLs,SListEn,Result):-Queue\=[]->combino(LoLs,Tail,SListEn,TRN)
                                                            ,combinoComplet(Queue,LoLs,TRN,Result);
                                                            combino(LoLs,Tail,SListEn,Result),!.
