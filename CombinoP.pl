@@ -46,6 +46,8 @@ pushBack(Element,[],[Element]).
 pushBack(Element,[Tail|Queue],[Tail|NewList]):-pushBack(Element,Queue,NewList).
 %Here we add in-front
 pushFront(Element,List,[Element|List]).
+%here we chek if two list are equal
+equal([T|Q],[H|F],Res):-Q\=[]->(T\=H->Res=0;equal(Q,F,Res));Res=1.
 %here we look for specific pin
 getSpecificPin(List,Pin,Res):-writeln("Here we show element on specific address"),Res.
 
