@@ -50,7 +50,7 @@ pushFront(Element,List,[Element|List]).
 % when they are not
 equal([T|Q],[H|F],Res):-Q\=[]->(T\=H->Res=0;equal(Q,F,Res));Res=1.
 %here we look for specific pin
-getSpecificPin(List,Pin,Pos,Res):-writeln("Here we show element on specific address"),Res=Pin+List+Pos.
+getSpecificPin(List,Pin,PoYs,Res):-writeln("Here we show element on specific address"),Res=Pin+List+PoYs.
 
 
 
