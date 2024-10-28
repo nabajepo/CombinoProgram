@@ -12,7 +12,7 @@ startCombinoP:-writeln("Hey this program combine numbers for n elements selected
                combinoP(N,ResL),
                display(ResL),
                writeln(""),
-               writeln("#########################################--END--#################################"),
+               writeln("########################################--END--#################################"),
                length(ResL,Length),
                write("We got "),
                write(Length),
@@ -50,7 +50,7 @@ pushFront(Element,List,[Element|List]).
 % when they are not
 equal([T|Q],[H|F],Res):-Q\=[]->(T\=H->Res=0;equal(Q,F,Res));Res=1.
 %here we look for specific pin
-getSpecificPin(List,Pin,PoYs,Res):-writeln("Here we show element on specific address"),Res=Pin+List+PoYs.
+
 
 
 
