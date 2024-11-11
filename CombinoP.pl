@@ -12,7 +12,7 @@ startCombinoP:-writeln("Hey this program combine numbers for n elements selected
                combinoP(N,ResL),
                display(ResL),
                writeln(""),
-               writeln("######################################--END--#################################"),
+               writeln("#####################################--END--#################################"),
                length(ResL,Length),
                write("We got "),
                write(Length),
