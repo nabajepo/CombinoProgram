@@ -17,7 +17,7 @@ startCombinoP:-writeln("Hey this program combine numbers for n elements selected
                write("We got "),
                write(Length),
                writeln(" results ").
-%%%%%%%%%%%%%%%%%%%%% This are all numbers we have to%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%% This are all numbers we have to%%%%%%%%%%%%%%%%
 numbers([0,1,2,3,4,5,6,7,8,9]).
 %Here where we do combinaison
 combinoP(Size,ResL):-numbers(N),Size\=1->combinoManage(N,N,Size,2,ResL),!;numbers(ResL),!.
