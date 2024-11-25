@@ -8,7 +8,7 @@ startCombinoP:-writeln("Hey this program combine numbers for n elements selected
                write("For "),
                write(N),
                writeln(" elements we got : "),
-               writeln("#####################################--RESULTS--################################"),
+               writeln("######################################--RESULTS--################################"),
                combinoP(N,ResL),
                display(ResL),
                writeln(""),
