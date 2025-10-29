@@ -54,3 +54,4 @@ getSpecificPin(List,Pin,PosX,Res):-writeln("Here we show element on specific add
 
 
 
+%-----------------------------------------------------------------> I am L 
